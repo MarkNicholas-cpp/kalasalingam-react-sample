@@ -1,16 +1,16 @@
 import './App.css';
-import Input from './Input.jsx';
-import Button from './Button.jsx';
 export default function App(){
+  let counter = 0;
   return <>
-  <h1>This is the Heading</h1>
-    <Input 
-    name="name"
-    type="text"
-    placeholder="Enter name"
-    id="form-name"
-    className="form-input"
-    required={false}
-    />
+  {/* Events in react */}
+    <button onClick={() => { 
+      counter+=1;
+    }}>+</button>
+    
+    <button onClick={() => console.log(counter)}>{counter}</button>
+
+    <button onClick={() => { 
+      counter-=1;
+    }}>-</button>
   </>
 }; 
