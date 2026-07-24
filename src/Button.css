@@ -1,0 +1,41 @@
+.button-model-1{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    margin: 10px;
+    color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-model-1:hover{
+    background-color: #fff;
+}
+.button-varient-red{
+    border:1px solid tomato; 
+    background-color: tomato;
+}
+.button-varient-red:hover{
+    border:1px solid tomato;
+    color: tomato;
+}
+
+.button-varient-blue{
+    border:1px solid blueviolet;
+    background-color: blueviolet;
+}
+.button-varient-blue:hover{
+    border:1px solid blueviolet;
+    color: blueviolet;
+}
+
+.button-varient-black{
+    border:1px solid black;
+    background-color: black;
+}
+.button-varient-black:hover{
+    border:1px solid black;
+    color: black;
+}
+
+
