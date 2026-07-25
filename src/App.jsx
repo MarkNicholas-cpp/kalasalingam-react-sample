@@ -1,19 +1,19 @@
-import './App.css';
-import { useState } from 'react';
+import { BrowserRouter,Routes,Route } from "react-router-dom"
+import Home from './Home.jsx';
+import About from './About.jsx';
+import Contact from './Contact.jsx'
 export default function App(){
-  const [counter,setCounter] = useState(0);
   return <>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni illo neque ad ut fugiat assumenda eligendi consectetur aut, sit ex nisi cumque impedit praesentium veniam amet deleniti, voluptatum nostrum quod?
-  Voluptatibus mollitia nostrum optio exercitationem iusto perferendis veniam inventore ab, quas rerum. In deserunt libero, impedit laborum similique suscipit tempore pariatur adipisci, dolorum, culpa ipsum quis. Eum fugit ullam tenetur?</p>
-  {/* Events in react */}
-    <button onClick={() => { 
-      setCounter(counter + 1);
-    }}>+</button>
+  This is a App Component;<br />
+  <BrowserRouter>
+    <Routes>
+      <Route index path="/" element={<Home/>}></Route>
+      <Route path="/home" element={<Home/>}></Route>
+      <Route path="/about" element={<About/>}></Route>
 
-    <button onClick={() => console.log(counter)}>{counter}</button>
-
-    <button onClick={() => { 
-      setCounter(counter - 1);
-    }}>-</button>
+      <Route path="/contact" element={<Contact/>}></Route>
+    </Routes>
+  </BrowserRouter>
+  
   </>
-}; 
+}
