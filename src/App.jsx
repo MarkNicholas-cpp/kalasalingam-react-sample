@@ -4,6 +4,7 @@ import About from './About.jsx';
 import Contact from './Contact.jsx'
 import Nav from './Nav.jsx'
 import Dashboard from './Dashboard.jsx'
+import User from './User.jsx'
 export default function App(){
   return <>
   <Nav></Nav>
@@ -13,6 +14,7 @@ export default function App(){
       <Route path="/home" element={<Home/>}></Route>
       <Route path="/about" element={<About/>}></Route>
       <Route path="/contact" element={<Contact/>}></Route>
+      <Route path="/user/:userId/:name/:age" element={<User/>}></Route>
       <Route path="/dashboard" element={<Dashboard/>}>
         <Route path="" element={<>Dashboard Index page</>}></Route>
         <Route path="payment" element={<>Payments page</>}></Route>

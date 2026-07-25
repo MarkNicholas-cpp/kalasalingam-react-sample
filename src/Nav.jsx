@@ -1,5 +1,4 @@
 export default function Nav() {
-
     return <nav>
         <a href="/" className="Icon">Nav Icon</a>
         <a href="/home">Home</a>
